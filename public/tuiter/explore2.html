@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <link href="explore2.css" rel="stylesheet"/>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
+
+</head>
+<body class = "wd-body pt-3  pl-4">
+<!-- did work here before overriding the main explore page --->
+<div class = "wd-container">
+    <div class = "wd-leftSidebar mx-auto">
+        <!-- need correct links, colors and symbols , may need to fix explore2 --->
+        <!--- maybe make these buttons that take you to links????? borders is gonna be a real problem --->
+        <!--- how to hide words if text small? the sizes here are probably wrong, adjust on css side--->
+        <nav class="navbar wd-navbar-custom ">
+            <div class="container-fluid d-flex flex-column">
+                <ul>
+                    <div class="pt-2 pb-2">
+                        <a class="navbar-brand wd-navbar-custom  pt-1 pb-1 " href="#">
+                            <span class="fa-stack small">
+                                <i class="fab fa-twitter fa-stack-2x"></i>
+                            </span>
+                            <div class="wd-navLabels "> </div>
+
+                        </a>
+                    </div>
+
+                    <div class="pt-2 pb-2">
+                        <a class="navbar-brand wd-navbar-custom pt-1 pb-1" href="#">
+                            <span class="fa-stack small">
+                                <i class="fa fa-home fa-stack-2x"></i>
+                            </span>
+                            <div class="wd-navLabels ">Home</div>
+
+                        </a>
+                    </div>
+                    <div class="pt-2 pb-2">
+                        <a class="navbar-brand wd-navbar-custom pt-1 pb-1" href="#">
+                            <span class="fa-stack small">
+                                <i class="fa fa-hashtag fa-stack-2x"></i>
+                            </span>
+                            <div class="wd-navLabels "> <b> Explore </b></div>
+
+                        </a>
+                    </div>
+                    <div class="pt-2 pb-2">
+                        <a class="navbar-brand wd-navbar-custom pt-1 pb-1" href="#">
+                            <span class="fa-stack small">
+                                <i class="fa fa-bell fa-stack-2x"></i>
+                            </span>
+                            <div class="wd-navLabels ">Notifications</div>
+                        </a>
+                    </div>
+                    <div class="pt-2 pb-2">
+                        <a class="navbar-brand wd-navbar-custom pt-1 pb-1" href="#">
+                            <span class="fa-stack small">
+                                <i class="fa fa-envelope fa-stack-2x "></i>
+                            </span>
+                            <div class="wd-navLabels ">Messages</div>
+                        </a>
+                    </div>
+                    <div class="pt-2 pb-2">
+                        <a class="navbar-brand wd-navbar-custom pt-1 pb-1" href="#">
+                            <span class="fa-stack small">
+                                <i class="fa fa-bookmark fa-stack-2x"></i>
+                            </span>
+                            <div class="wd-navLabels ">Bookmarks</div>
+                        </a>
+                    </div>
+                    <div class="pt-2 pb-2">
+                        <a class="navbar-brand wd-navbar-custom pt-1 pb-1" href="#">
+                            <span class="fa-stack small">
+                                <i class="fa fa-list fa-stack-2x"></i>
+                            </span>
+                            <div class="wd-navLabels ">Lists</div>
+                        </a>
+                    </div>
+                    <div class="pt-2 pb-2">
+                    <a class="navbar-brand wd-navbar-custom pt-1 pb-1" href="#">
+                        <span class="fa-stack small">
+                            <i class="fa fa-user fa-stack-2x"></i>
+                        </span>
+                        <div class="wd-navLabels ">Profile</div>
+                    </a>
+                    </div>
+                    <div class="pt-2 pb-2">
+                    <a class="navbar-brand wd-navbar-custom pt-1 pb-1" href="#">
+                        <span class="fa-stack small">
+                            <i class="fa fa-circle fa-stack-2x"></i>
+                            <i class="fa fa-ellipsis-h fa-stack-1x wd-colorChange"></i>
+                        </span>
+                        <div class="wd-navLabels ">More  </div>
+                    </a>
+                    </div>
+                </ul>
+            </div>
+        </nav>
+        <!-- For those of you that are still curious about this, using the "btn-block" class might help.-->
+        <div >
+            <button type="button" class=" btn btn-primary rounded-pill wd-buttonWidth ml-5">Tuit</button>
+        <!-- need tweet button   wd-navLabels The 'more' icon is actually done by stacking circle icon behind ellipsis icon both of them can be found on fontawesome.  --->
+        </div>
+    </div>
+
+
+
+    <div class = "wd-center mx-auto position-relative">
+
+
+        <div class="wd-searchContainer pb-3 ">
+            <div class="form-group has-search mx-2 ">
+                <span class="fa fa-search form-control-feedback wd-search"></span>
+                <a href="explore-settings.html" class = "wd-gear pt-1"> <i class="fa fa-cog fa-2x"></i> </a>
+                <input type="text" class="form-control" placeholder="Search Tuiter">
+
+            </div>
+
+        </div>
+
+        <div class="d-flex justify-content-between wd-navbarContainer pb-3">
+            <a href="links.html" class = "wd-links1 mx-2 ">For You</a>
+            <a href="links.html" class = "wd-links">Trending</a>
+            <a href="links.html" class = "wd-links">News</a>
+            <a href="links.html" class = "wd-links mx-2">Sports</a>
+            <a href="links.html" class = "wd-links2 mx-2 ">Entertainment</a>
+        </div>
+
+
+        <!-- this version doesnt work for new styling.
+                <nav class="navbar navbar-expand-lg  navbar-dark wd-navbar">
+
+            <ul class="nav nav-tabs wd-navColor ">
+                <li class="nav-item ">
+                    <a class="nav-link disabled " href="#">For You</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" href="#">Trending</a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link disabled" href="#">News</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" href="#">Sports</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" href="#">Entertainment</a>
+                    </li>
+
+                </ul>
+
+
+                </nav>
+        -->
+
+
+
+
+        <! --- change some style stuff--->
+        <div class="wd-bigImageContainer  position-relative">
+            <img src="starship.jpg" class="wd-bigImage " />
+            <div class="wd-bottomText position-absolute ">SpaceX's Starship</div>
+        </div>
+
+        <div class = "wd-container1 pt-4">
+            <div class = "wd-leftElement1 mx-auto">
+                <div  class="wd-topics pb-2">Web Development</div>
+                <div class="wd-name pr-1">ReactJS  <i class="fa fa-check-circle  "></i> <span class="wd-timestamp"> -2h </span></div><!--- add in symbol and timestamp here   --->
+                <div class="wd-title pt-1 position-relative">React.js is a component based front end library that makes it very easy to build single page applications or SPAs</div>
+                <br/>
+
+            </div>
+            <div class = "wd-rightElement1 pt-2 mx-auto">
+
+                <img src="reactjs.png" class="wd-right_image" width="100px"  height="100px"/>
+            </div>
+        </div>
+
+
+        <div class = "wd-container1 pt-4 ">
+            <div class = "wd-leftElement1 mx-auto">
+                <div class="wd-name pb-2 ">JavaScript <i class="fa fa-check-circle "></i><span class="wd-timestamp"> -2h </span> </div><!--- add in symbol and timestamp here   --->
+                <div class="wd-title pb-2 position-relative">JavaScript is programing language that can run on browsers as well as desktops</div>
+                <div class="wd-tuitsCount pb-3 pt-2">123K Tweets</div>
+
+            </div>
+
+            <div class = "wd-rightElement1 mx-auto">
+                <img src="javascript.png" class="wd-right_image" width="100px"  height="100px"/>
+            </div>
+        </div>
+
+        <div class = "wd-container1 pt-4">
+            <div class = "wd-leftElement1 mx-auto">
+                <div class="wd-topics pb-2">Web Development</div>
+                <div class="wd-title pb-2 position-relative">jQuery</div>
+                <div class="wd-tuitsCount pb-3 pt-2">123K Tweets</div>
+            </div>
+            <div class = "wd-rightElement1 mx-auto">
+                <img src="jquery.png" class="wd-right_image" width="100px"  height="100px"/>
+            </div>
+        </div>
+
+        <!--- add in symbol and timestamp here   --->
+        <div class = "wd-container1 pt-4">
+            <div class = "wd-leftElement1 mx-auto">
+                <div  class="wd-topics pb-2">Web Development</div>
+                <div  class="wd-title pb-2 position-relative">NodeJS  <i class="fa fa-check-circle fa-sm "></i> <span class="wd-timestamp"> -2h </span></div>
+                <div  class="wd-tuitsCount pb-3 pt-2">123K Tweets</div>
+            </div>
+            <div class = "wd-rightElement1 mx-auto">
+                <img src="nodejs.jpg" class="wd-right_image" width="100px"  height="100px"/>
+            </div>
+        </div>
+
+
+
+    </div>
+
+    <div class = "wd-rightSidebar mx-auto position-relative">
+        <!--- don't worry about outlines, they are for a white screen only??? is backgound in this section double check with TA  --->
+
+        <div class="wd-followContainer">
+            <h4 class="wd-whotofollow px-4 mt-2 pt-2 pb-2">Who to Follow</h4>
+            <!-- idea for this section: another 3 coulumn setup with percentages to shipt sizes. All within rightsidebar  -->
+            <div class = "wd-followBox px-2">
+                <div class = "wd-followBoxLeft">
+                    <img src="java.png" class="wd-avatar" />
+                </div>
+                <div class = "wd-followBoxCenter position-relative">
+                    <div class = "wd-name2">Java  <i class="fa fa-check-circle "></i> </div>
+                    <div class = "wd-handle">@Java</div>
+                </div>
+                <div class = "wd-followBoxRight position-relative">
+                    <button type="button" class="btn btn-light rounded-pill "> <b>Follow</b> </button>
+                </div>
+
+            </div>
+            <div class = "wd-followBox px-2 pt-2 pb-2">
+                <div class = "wd-followBoxLeft">
+                    <img src="rs.jpg" class="wd-avatar" />
+                </div>
+                <div class = "wd-followBoxCenter position-relative">
+                    <div class = "wd-name2">Relativity Space  <i class="fa fa-check-circle "></i> </div>
+                    <div class = "wd-handle">@relativityspace</div>
+                </div>
+                <div class = "wd-followBoxRight position-relative">
+                    <button type="button" class="btn btn-light rounded-pill"><b>Follow</b></button>
+                </div>
+
+            </div>
+            <div class = "wd-followBox px-2 pt-2 pb-2">
+                <div class = "wd-followBoxLeft">
+                    <img src="vg.png" class="wd-avatar" />
+                </div>
+                <div class = "wd-followBoxCenter position-relative">
+                    <div class = "wd-name2">Virgin Galactic  <i class="fa fa-check-circle "></i> </div>
+                    <div class = "wd-handle">@virgingalatic</div>
+                </div>
+                <div class = "wd-followBoxRight position-relative">
+                    <button type="button" class="btn btn-light rounded-pill"><b>Follow</b></button>
+                </div>
+
+            </div>
+            <div class = "wd-followBox px-2 pt-2 pb-2">
+                <div class = "wd-followBoxLeft">
+                    <img src="nasa.png" class="wd-avatar" />
+                </div>
+                <div class = "wd-followBoxCenter position-relative">
+                    <div class = "wd-name2">NASA  <i class="fa fa-check-circle "></i> </div>
+                    <div class = "wd-handle">@NASA</div>
+                </div>
+                <div class = "wd-followBoxRight position-relative">
+                    <button type="button" class="btn btn-light rounded-pill"><b>Follow</b></button>
+                </div>
+
+            </div>
+            <div class = "wd-followBox px-2 pt-2 pb-2">
+                <div class = "wd-followBoxLeft">
+                    <img src="tesla.jpg" class="wd-avatar" />
+                </div>
+                <div class = "wd-followBoxCenter position-relative">
+                    <div class = "wd-name2">Tesla  <i class="fa fa-check-circle "></i> </div>
+                    <div class = "wd-handle">@Tesla</div>
+                </div>
+                <div class = "wd-followBoxRight position-relative">
+                    <button type="button" class="btn btn-light rounded-pill"><b>Follow</b></button>
+                </div>
+
+            </div>
+
+
+        </div>
+
+
+
+    </div>
+
+
+</div>
+
+</body>
+</html>
