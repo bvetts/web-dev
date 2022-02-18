@@ -15,8 +15,8 @@
     <div class = "wd-leftSidebar mx-auto">
 
 
-        <nav class="navbar wd-navbar-custom ">
-            <div class="container-fluid d-flex flex-column">
+        <nav class="navbar-nav wd-navbar-custom ">
+            <div class="container-fluid d-flex flex-column ">
                 <ul>
                     <div class="pt-2 pb-2">
                         <a class="navbar-brand wd-navbar-custom  pt-1 pb-1 " href="#">
@@ -37,17 +37,19 @@
 
                         </a>
                     </div>
-                    <div class="pt-2 pb-2">
-                        <a class="navbar-brand wd-navbar-custom pt-1 pb-1" href="#">
+
+
+                    <div class="wd-navbar-active pt-2 pb-2">
+                        <a class="navbar-brand wd-customActive pt-1 pb-1  " href="explore.html">
                             <span class="fa-stack small">
                                 <i class="fa fa-hashtag fa-stack-2x"></i>
                             </span>
-                            <div class="wd-navLabels "> <b> Explore </b></div>
+                            <div class="wd-navLabels  "> Explore </div>
 
                         </a>
                     </div>
                     <div class="pt-2 pb-2">
-                        <a class="navbar-brand wd-navbar-custom pt-1 pb-1" href="#">
+                        <a class="navbar-brand wd-navbar-custom pt-1 pb-1 " href="#">
                             <span class="fa-stack small">
                                 <i class="fa fa-bell fa-stack-2x"></i>
                             </span>
@@ -87,7 +89,7 @@
                         </a>
                     </div>
                     <div class="pt-2 pb-2">
-                        <a class="navbar-brand wd-navbar-custom pt-1 pb-1" href="#">
+                        <a class="navbar-brand wd-navbar-custom pt-1" href="#">
                         <span class="fa-stack small">
                             <i class="fa fa-circle fa-stack-2x"></i>
                             <i class="fa fa-ellipsis-h fa-stack-1x wd-colorChange"></i>
@@ -100,7 +102,7 @@
         </nav>
         <!-- For those of you that are still curious about this, using the "btn-block" class might help.-->
         <div >
-            <button type="button" class=" btn btn-primary rounded-pill wd-buttonWidth ml-5">Tuit</button>
+            <button type="button" class=" wd-btn-default rounded-pill wd-buttonWidth ml-5">Tuit</button>
             <!-- need tweet button   wd-navLabels The 'more' icon is actually done by stacking circle icon behind ellipsis icon both of them can be found on fontawesome.  --->
         </div>
     </div>
@@ -119,41 +121,41 @@
             </div>
 
         </div>
+        <!--
+                <div class="d-flex justify-content-between wd-navbarContainer pb-3">
+                    <a href="links.html" class = "wd-links1 mx-2 ">For You</a>
+                    <a href="links.html" class = "wd-links">Trending</a>
+                    <a href="links.html" class = "wd-links">News</a>
+                    <a href="links.html" class = "wd-links mx-2">Sports</a>
+                    <a href="links.html" class = "wd-links2 mx-2 ">Entertainment</a>
+                </div>
 
-        <div class="d-flex justify-content-between wd-navbarContainer pb-3">
-            <a href="links.html" class = "wd-links1 mx-2 ">For You</a>
-            <a href="links.html" class = "wd-links">Trending</a>
-            <a href="links.html" class = "wd-links">News</a>
-            <a href="links.html" class = "wd-links mx-2">Sports</a>
-            <a href="links.html" class = "wd-links2 mx-2 ">Entertainment</a>
-        </div>
-
-
-        <!-- this version doesnt work for new styling.
-                <nav class="navbar navbar-expand-lg  navbar-dark wd-navbar">
-
-            <ul class="nav nav-tabs wd-navColor ">
-                <li class="nav-item ">
-                    <a class="nav-link disabled " href="#">For You</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link disabled" href="#">Trending</a>
-                </li>
-                <li class="nav-item ">
-                    <a class="nav-link disabled" href="#">News</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link disabled" href="#">Sports</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link disabled" href="#">Entertainment</a>
-                    </li>
-
-                </ul>
-
-
-                </nav>
         -->
+
+        <nav class="navbar navbar-expand-lg navbar-dark  wd-navbar wd-navbarContainer pb-3">
+
+                    <ul class="nav nav-tabs wd-navColor wd-navLimit">
+                        <li class="nav-item  wd-navbar-active mx-auto">
+                            <a class="nav-link disabled " href="#"> <span class="wd-whiteText">For You</span></a>
+                        </li>
+                        <li class="nav-item mx-auto" >
+                            <a class="nav-link disabled" href="#">Trending</a>
+                        </li>
+                        <li class="nav-item mx-auto">
+                            <a class="nav-link disabled" href="#">News</a>
+                        </li>
+                        <li class="nav-item mx-auto">
+                            <a class="nav-link disabled" href="#">Sports</a>
+                        </li>
+                        <li class="nav-item wd-navlinks2 mx-auto">
+                            <a class="nav-link disabled" href="#">Entertainment</a>
+                            </li>
+
+                        </ul>
+
+
+                        </nav>
+
 
 
 
