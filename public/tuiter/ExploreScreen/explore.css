@@ -145,6 +145,7 @@ width: 100%
     border-color:rgb(47, 51, 54);
     align-item:center;
 
+
 }
 .wd-leftElement1{
     width:70%;
@@ -156,6 +157,8 @@ width: 100%
 }
 
 .wd-right_image{
+width:100px;
+height:100px;
     float:right;
     border-radius: 25px;
     right: 16px;
@@ -167,6 +170,7 @@ width: 100%
         border-width: 1px;
         border-color:rgb(47, 51, 54);
     align-item:center;
+    background-color: rgb(37, 41, 44);
 }
 
 .wd-leftSidebar{
@@ -197,9 +201,11 @@ width: 100%
 .wd-followContainer{
     background-color: rgb(37, 41, 44);
     border-radius: 25px;
+
 }
 .wd-whotofollow{
     color:white;
+    font-size: 20px;
 
 }
 .wd-timestamp{
@@ -251,11 +257,13 @@ font-size: 10px;
 /* only difference is slightly smaller column 3? */
 @media (min-width: 1400px) {
 .wd-followBoxCenter{
-    width: 60%;
+    width: 50%;
     display: inline-block;
 
     float:left
 }
+//added in
+
 
 }
 /* up to L only */
@@ -284,6 +292,10 @@ font-size: 10px;
     .wd-handle{
         font-size: 13px;
     }
+.wd-navlinks2{
+           display: none;
+        }
+
 
 }
 
@@ -306,7 +318,9 @@ font-size: 10px;
       display: inline-block;
   }
 
-
+.wd-navlinks2{
+           display: none;
+        }
 
 
 }
@@ -330,8 +344,7 @@ font-size: 10px;
 }
 
  .wd-gear{
-
-    color: white;
+    color: rgb(70, 127, 208);
     width:15%
     vertical-align:middle;
     float:right;
@@ -346,7 +359,7 @@ border-right-style: solid;
     vertical-align:middle;
     width:90%;
     padding-left: 40px;
-    background-color: rgb(47, 51, 54);
+    background-color: white;
     color: white;
     border-radius: 25px;
     padding-right: 16px;
