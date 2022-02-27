@@ -1,6 +1,6 @@
 
 
-const postSummaryList = (item) => {
+const plist = (item) => {
 
 
     return(`
@@ -23,6 +23,6 @@ const postSummaryList = (item) => {
 
     `);
 }
-export default postSummaryList;
+export default plist;
 
 

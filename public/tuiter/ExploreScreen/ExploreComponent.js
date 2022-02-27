@@ -1,9 +1,6 @@
 
 
-//this section is entire explore screen. Define search bar, navbar,
-//image and then call the list
 
-    //some sizing issues to fix with this, also need to mess with colors
 import PostSummaryList from "../PostSummaryList";
 const ExploreComponent = () => {
     return(`
