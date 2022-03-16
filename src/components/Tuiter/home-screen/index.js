@@ -1,5 +1,5 @@
 import React from "react";
-import NavigationSidebar from "../NavigationSidebar";
+import NavigationSidebar from "../navigation-sidebar";
 import HomeComponent from "./home-component.js";
 import PostSummaryList from "../post-summary-list";
 
