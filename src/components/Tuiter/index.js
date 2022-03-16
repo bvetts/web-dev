@@ -1,7 +1,7 @@
 import React from "react";
-import {Link} from "react-router-dom";
+
 import NavigationSidebar from "./NavigationSidebar";
-import WhoToFollowListItem from "./WhoToFollowList/WhoToFollowListItem";
+import WhoToFollowListItem from "./WhoToFollowList/who-to-follow-list-item";
 import './index.css';
 import WhoToFollowList from "./WhoToFollowList";
 import PostSummaryItem from "./post-summary-list/post-summary-item";
