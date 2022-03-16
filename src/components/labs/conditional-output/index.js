@@ -1,6 +1,6 @@
 import React from "react";
-import ConditionalOutputIfElse from "./ConditionalOutputIfElse";
-import ConditionalOutputInline from "./ConditionalOutputInline";
+import ConditionalOutputIfElse from "./conditional-output-if-else";
+import ConditionalOutputInline from "./conditional-output-inline";
 const ConditionalOutput = () => {
     return(
         <>

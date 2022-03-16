@@ -4,12 +4,12 @@ import './vendors/bootstrap/bootstrap.min.css';
 import './vendors/bootstrap/fontawesome/css/all.min.css';
 
 import HelloWorld from "./components/hello-world";
-import Labs from "./components/Labs";
-import Tuiter from "./components/Tuiter";
+import Labs from "./components/labs";
+import Tuiter from "./components/tuiter";
 
 import {BrowserRouter, Route , Routes } from "react-router-dom";
-import HomeScreen from "./components/Tuiter/home-screen";
-import ExploreScreen from "./components/Tuiter/explore-screen";
+import HomeScreen from "./components/tuiter/home-screen";
+import ExploreScreen from "./components/tuiter/explore-screen";
 
 //these are not displaying correctly. why not??
 //stuff on page 5 doesn't work
