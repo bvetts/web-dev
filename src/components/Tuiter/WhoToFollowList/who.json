@@ -1,0 +1,27 @@
+[
+  {
+    "key": "1",
+    "avatarIcon": "java.png",
+    "userName": "Java",
+    "handle": "Java"
+  },
+  {
+    "key": "2",
+    "avatarIcon": "rs.jpg",
+    "userName": "Relativity Space",
+    "handle": "relativityspace"
+  },
+  {
+    "key": "3",
+    "avatarIcon": "vg.png",
+    "userName": "Virgin Galactic",
+    "handle": "virgingalactic"
+  },
+  {
+    "key": "4",
+    "avatarIcon": "nasa.png",
+    "userName": "NASA",
+    "handle": "nasa"
+  }
+]
+

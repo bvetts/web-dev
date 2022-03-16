@@ -1,0 +1,982 @@
+
+.wd-body {
+
+  background-color: black;
+  border-color: rgb(47, 51, 54);
+
+}
+
+.wd-container{
+    display: flex;
+    overflow: hidden;
+}
+
+
+.wd-links1{
+    color: white;
+    text-decoration-color: rgb(29,161,242);
+    font-size: 18px;
+    text-underline-offset: 12px;
+}
+.wd-links{
+    color: rgb(110, 118, 125);
+    font-size: 18px;
+
+    text-decoration: none;
+}
+.wd-links2{
+    color: rgb(110, 118, 125);
+    font-size: 18px;
+
+    text-decoration: none;
+}
+
+
+.nav a{text-decoration: none;}
+
+.wd-tuitsCount{
+    font-size: 15px;
+    color: rgb(110, 118, 125);
+}
+
+.wd-title{
+    font-size: 20px;
+    color: white;
+}
+
+.wd-topics{
+    font-size: 15px;
+    color: rgb(110, 118, 125);
+
+}
+.wd-line{
+    color: rgb(110, 118, 125);
+    border-width: 1px;
+}
+.wd-name{
+    color: white;
+    font-size: 15px;
+
+}
+.wd-name2{
+    color: white;
+    font-size: 15px;
+
+}
+.wd-handle{
+    color: rgb(110, 118, 125);
+    font-size: 15px;
+
+}
+.wd-bigImage{
+    width: 100%;
+    height: 75%;
+}
+.wd-bigImageContainer{
+border-style: solid;
+    border-width: 1px;
+    border-color:rgb(47, 51, 54);
+}
+.wd-bottomText{
+
+    bottom: 8px;
+    left: 16px;
+    color: white;
+    font-size: 30px;
+}
+.wd-navbarContainer{
+    border-left-style: solid;
+    border-right-style: solid;
+    border-width: 1px;
+    border-color:rgb(47, 51, 54);
+    width: 100%;
+    color: white;
+}
+
+
+.wd-navbar-custom {
+    color: white;
+    background-color: black;
+    width: 100%;
+
+}
+.wd-hnavcolor{
+    color:white;
+}
+
+.wd-navLimit{
+width: 100%;
+}
+.wd-whiteText{
+    color: white;
+}
+.wd-customActive{
+    color: white;
+
+}
+
+.btn-primary {
+    background-color: rgb(70, 127, 208);
+}
+.wd-btn-default {
+        background-color:  rgb(70, 127, 208);
+        color: white;
+        border-radius: 25px;
+        border-color: rgb(70, 127, 208);
+    }
+
+
+.wd-navbar-active{
+    color: white;
+    background-color: rgb(70, 127, 208);
+}
+
+.wd-text{
+    color: white;
+    font-size: 15px;
+
+}
+
+.wd-container1-1{
+    display: flex;
+    border-bottom-style: solid;
+    border-top-style: solid;
+    border-width: 1px;
+    border-color:rgb(47, 51, 54);
+    align-item:center;
+
+
+}
+.wd-leftElement1{
+    width:70%;
+    float:left;
+}
+.wd-rightElement1{
+    width:20%;
+    float:right;
+}
+
+.wd-right_image{
+width:100px;
+height:100px;
+    float:right;
+    border-radius: 25px;
+    right: 16px;
+}
+.wd-container1{
+    display: flex;
+    border-left-style: solid;
+    border-right-style: solid;
+        border-width: 1px;
+        border-color:rgb(47, 51, 54);
+    align-item:center;
+    background-color: rgb(37, 41, 44);
+}
+
+.wd-leftSidebar{
+    width: 15%;
+    display: inline-block;
+
+}
+.wd-colorChange{
+    color:black;
+}
+.fa-stack.small {
+    font-size: 0.5em;
+    vertical-align: middle;
+}
+.wd-center{
+    width: 55%;
+    display: inline-block;
+
+}
+.wd-rightSidebar{
+    width: 25%;
+    display: inline-block;
+
+
+
+}
+
+.wd-followContainer{
+    background-color: rgb(37, 41, 44);
+    border-radius: 25px;
+
+}
+.wd-whotofollow{
+    color:white;
+    font-size: 20px;
+
+}
+.wd-timestamp{
+color: rgb(110, 118, 125);
+font-size: 13px;
+
+}
+.wd-buttonWidth{
+    width: 80%;
+    margin-left:24px;
+}
+.wd-sizer{
+font-size: 10px;
+}
+/* change these for screen sizes */
+.wd-followBox{
+    display: flex;
+
+    align-items:center;
+
+}
+.wd-followBoxLeft{
+    width: 20%;
+    display: inline;
+}
+/* used avatar instead */
+
+.wd-followBoxRight{
+    width: 10%;
+    display: inline-block;
+
+
+}
+.wd-followBoxCenter{
+    width: 50%;
+    display: inline-block;
+
+    float:left
+}
+.wd-navLabels{
+    font-size: 12px;
+    display: inline;
+}
+.wd-followButton{
+}
+
+/* make all XXL things the base? then use these to change for smaller sections?? i think they cascade but untested */
+
+/*  XL and over only */
+/* only difference is slightly smaller column 3? */
+@media (min-width: 1400px) {
+.wd-followBoxCenter{
+    width: 50%;
+    display: inline-block;
+
+    float:left
+}
+
+
+
+}
+/* up to L only */
+@media (max-width: 1200px) {
+.wd-rightSidebar{
+        width: 29%;
+        display: inline-block;
+
+    }
+
+    .wd-center{
+        width: 58%;
+        display: inline-block;
+
+    }
+    .wd-navLabels{
+        display: none;
+    }
+    .wd-leftSidebar{
+        width: 9%;
+        display: inline-block;
+    }
+    .wd-name2{
+        font-size: 13px;
+    }
+    .wd-handle{
+        font-size: 13px;
+    }
+.wd-navlinks2{
+           display: none;
+        }
+
+
+}
+
+
+
+/* up to M only */
+@media (max-width: 992px) {
+  .wd-rightSidebar {
+    display: none;
+  }
+
+  .wd-center{
+    width:76%;
+  }
+  .wd-navLabels{
+    display: none;
+  }
+  .wd-leftSidebar{
+      width: 13%;
+      display: inline-block;
+  }
+
+.wd-navlinks2{
+           display: none;
+        }
+
+
+}
+
+/* up to S only */
+/* differences is in post text only?? columns same as medium */
+@media (max-width: 768px) {
+    .wd-links2{
+       display: none;
+    }
+    .wd-navlinks2{
+           display: none;
+        }
+
+}
+
+
+/* some positioning and margins in this section because bootstrap version messed everything up.*/
+.wd-navbarContainer{
+    position: inline;
+}
+
+ .wd-gear{
+    color: rgb(70, 127, 208);
+    width:15%;
+    vertical-align:middle;
+    float:right;
+}
+.wd-searchContainer{
+border-left-style: solid;
+border-right-style: solid;
+    border-width: 1px;
+    border-color:rgb(47, 51, 54);
+}
+
+
+.wd-search{
+    color:rgb(80, 85, 90);
+    vertical-align:middle;
+    width:85%;
+    padding-left: 40px;
+    background-color: white;
+    color: white;
+    border-radius: 25px;
+    padding-right: 16px;
+    border-color:rgb(47, 51, 54);
+    height: 40px;
+}
+
+
+.wd-avatar{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+ }
+
+
+.wd-body {
+
+  background-color: black;
+  border-color: rgb(47, 51, 54);
+
+}
+
+.wd-container{
+    display: flex;
+    overflow: hidden;
+}
+
+
+.wd-links1{
+    color: white;
+    text-decoration-color: rgb(29,161,242);
+    font-size: 18px;
+    text-underline-offset: 12px;
+}
+.wd-links{
+    color: rgb(110, 118, 125);
+    font-size: 18px;
+
+    text-decoration: none;
+}
+.wd-links2{
+    color: rgb(110, 118, 125);
+    font-size: 18px;
+
+    text-decoration: none;
+}
+
+
+.nav a{text-decoration: none;}
+
+.wd-tuitsCount{
+    font-size: 15px;
+    color: rgb(110, 118, 125);
+}
+
+.wd-title{
+    font-size: 15px;
+    color: white;
+}
+
+.wd-topics{
+    font-size: 15px;
+    color: rgb(110, 118, 125);
+
+}
+.wd-line{
+    color: rgb(110, 118, 125);
+    border-width: 1px;
+}
+.wd-name{
+    color: white;
+    font-size: 15px;
+
+}
+.wd-name2{
+    color: white;
+    font-size: 15px;
+
+}
+.wd-handle{
+    color: rgb(110, 118, 125);
+    font-size: 15px;
+
+}
+.wd-bigImage{
+    width: 100%;
+    height: 75%;
+}
+.wd-bigImage2{
+    width: 100%;
+    height: 75%;
+}
+
+.wd-right_image{
+width:75px;
+height:75px;
+    float:right;
+    border-radius: 25px;
+    right: 16px;
+}
+
+
+.wd-bigImageContainer{
+border-style: solid;
+    border-width: 1px;
+    border-color:rgb(47, 51, 54);
+
+}
+
+.wd-bigImage2{
+
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+
+
+ }
+.wd-bigImage{
+
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+
+ }
+
+
+.wd-bottomText{
+
+    bottom: 8px;
+    left: 16px;
+    color: white;
+    font-size: 30px;
+}
+.wd-navbarContainer{
+    border-left-style: solid;
+    border-right-style: solid;
+    border-width: 1px;
+    border-color:rgb(47, 51, 54);
+    width: 100%;
+    color: white;
+}
+
+
+.wd-navbar-custom {
+    color: white;
+    background-color: black;
+    width: 100%;
+
+}
+.wd-hnavcolor{
+    color:white;
+}
+
+.wd-navLimit{
+width: 100%;
+}
+.wd-whiteText{
+    color: white;
+}
+.wd-customActive{
+    color: white;
+
+}
+
+.btn-primary {
+    background-color: rgb(70, 127, 208);
+}
+.wd-btn-default {
+        background-color:  rgb(70, 127, 208);
+        color: white;
+        border-radius: 25px;
+        border-color: rgb(70, 127, 208);
+    }
+
+
+.wd-navbar-active{
+    color: white;
+    background-color: rgb(70, 127, 208);
+}
+
+
+
+.wd-container1-1{
+    display: flex;
+    border-bottom-style: solid;
+    border-top-style: solid;
+    border-width: 1px;
+    border-color:rgb(47, 51, 54);
+    align-item:center;
+
+}
+.wd-leftElement1{
+    width:70%;
+    float:left;
+}
+.wd-rightElement1{
+    width:20%;
+    float:right;
+}
+
+.wd-right_image{
+    float:right;
+    border-radius: 25px;
+    right: 16px;
+}
+.wd-container1{
+    display: flex;
+    border-left-style: solid;
+    border-right-style: solid;
+        border-width: 1px;
+        border-color:rgb(47, 51, 54);
+    align-item:center;
+    background-color: rgb(37, 41, 44);
+}
+
+.wd-leftSidebar{
+    width: 15%;
+    display: inline-block;
+
+}
+.wd-colorChange{
+    color:black;
+}
+.fa-stack.small {
+    font-size: 0.5em;
+    vertical-align: middle;
+}
+.wd-center{
+    width: 55%;
+    display: inline-block;
+
+}
+.wd-rightSidebar{
+    width: 25%;
+    display: inline-block;
+
+
+
+}
+
+.wd-followContainer{
+    background-color: rgb(37, 41, 44);
+    border-radius: 25px;
+}
+.wd-whotofollow{
+    color:white;
+
+}
+.wd-timestamp{
+color: rgb(110, 118, 125);
+font-size: 13px;
+
+}
+.wd-buttonWidth{
+    width: 80%;
+    margin-left:24px;
+}
+.wd-sizer{
+font-size: 10px;
+}
+/* change these for screen sizes */
+.wd-followBox{
+    display: flex;
+
+    align-items:center;
+
+}
+.wd-followBoxLeft{
+    width: 20%;
+    display: inline;
+}
+/* used avatar instead */
+
+.wd-followBoxRight{
+    width: 10%;
+    display: inline-block;
+
+
+}
+.wd-followBoxCenter{
+    width: 50%;
+    display: inline-block;
+
+    float:left
+}
+.wd-navLabels{
+    display: inline;
+}
+.wd-followButton{
+}
+
+/* make all XXL things the base? then use these to change for smaller sections?? i think they cascade but untested */
+
+/*  XL and over only */
+/* only difference is slightly smaller column 3? */
+@media (min-width: 1400px) {
+.wd-followBoxCenter{
+    width: 50%;
+    display: inline-block;
+
+    float:left
+}
+
+
+
+}
+/* up to L only */
+@media (max-width: 1200px) {
+.wd-rightSidebar{
+        width: 29%;
+        display: inline-block;
+
+    }
+
+    .wd-center{
+        width: 58%;
+        display: inline-block;
+
+    }
+    .wd-navLabels{
+        display: none;
+    }
+    .wd-leftSidebar{
+        width: 9%;
+        display: inline-block;
+    }
+    .wd-name2{
+        font-size: 13px;
+    }
+    .wd-handle{
+        font-size: 13px;
+    }
+.wd-navlinks2{
+           display: none;
+        }
+
+
+ .wd-contentBlock{
+     display: inline-block;
+     padding-left: 12px;
+      max-width: 85%;
+
+ }
+
+}
+
+
+
+/* up to M only */
+@media (max-width: 992px) {
+  .wd-rightSidebar {
+    display: none;
+  }
+
+  .wd-center{
+    width:76%;
+  }
+  .wd-navLabels{
+    display: none;
+  }
+  .wd-leftSidebar{
+      width: 13%;
+      display: inline-block;
+  }
+
+.wd-navlinks2{
+           display: none;
+        }
+
+
+}
+
+/* up to S only */
+/* differences is in post text only?? columns same as medium */
+@media (max-width: 768px) {
+    .wd-links2{
+       display: none;
+    }
+    .wd-navlinks2{
+           display: none;
+        }
+
+}
+
+
+/* some positioning and margins in this section because bootstrap version messed everything up.*/
+.wd-navbarContainer{
+    position: inline;
+}
+
+ .wd-gear{
+    color: rgb(70, 127, 208);
+    width:9%;
+    vertical-align:middle;
+    float:right;
+}
+.wd-searchContainer{
+border-left-style: solid;
+border-right-style: solid;
+    border-width: 1px;
+    border-color:rgb(47, 51, 54);
+}
+
+
+
+.wd-avatar{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+ }
+
+
+ .wd-body {
+
+   background-color: black;
+   border-color: rgb(47, 51, 54);
+
+ }
+ .wd-title{
+     color: white;
+     font-size: 20px;
+
+ }
+ .wd-handle{
+     color: rgb(110, 118, 125);
+     font-size: 13px;
+     padding-bottom: 6px;
+
+
+ }
+
+ .wd-line{
+ padding-left: 16px;
+ padding-top: 12px;
+ border-style: solid;
+ border-width: 1px;
+ border-color:rgb(47, 51, 54);
+ }
+
+ .wd-avatar{
+   width: 50px;
+   height: 50px;
+   border-radius: 50%;
+  }
+
+ .wd-handle2{
+   color: rgb(110, 118, 125);
+   font-size: 15px;
+   padding-right: 6px;
+ }
+
+ .wd-external{
+    color: rgb(110, 118, 125);
+    font-size: 15px;
+    padding-bottom: 12px;
+         padding-right: 12px;
+         padding-left: 12px;
+
+ }
+
+
+
+ .wd-author{
+     color: white;
+     font-size: 15px;
+     padding-right: 6px;
+
+ }
+ .wd-date{
+     color: rgb(110, 118, 125);
+     font-size: 15px;
+ }
+ .wd-text{
+     color: white;
+     font-size: 15px;
+     padding-right: 16px;
+     max-width: 506px;
+
+ }
+
+
+
+ .wd-boldTitle{
+     color: white;
+     font-size: 15px;
+     font-weight: bold;
+     padding-top: 12px;
+     padding-right: 12px;
+     padding-left: 12px;
+ }
+ .wd-imageText{
+     color: rgb(110, 118, 125);
+     font-size: 15px;
+     font-weight: bold;
+     padding-bottom: 4px;
+     padding-right: 12px;
+     padding-left: 12px;
+
+
+ }
+ .wd-line1{
+
+
+
+ }
+
+.wd-blue{
+color: rgb(70, 127, 208);
+}
+ .wd-line2{
+
+     border-style: solid;
+     border-width: 1px;
+     border-color:rgb(47, 51, 54);
+     border-bottom-left-radius: 20px;
+     border-bottom-right-radius: 20px;
+
+ }
+.wd-line2Hide{
+display: none;
+     border-style: solid;
+     border-width: 1px;
+     border-color:rgb(47, 51, 54);
+     border-bottom-left-radius: 20px;
+     border-bottom-right-radius: 20px;
+
+ }
+ .wd-first{
+ left: 0%; position: relative;
+ color:rgb(110, 118, 125);
+ }
+ .wd-first2{
+ left: 0%; position: relative;
+ color:rgb(110, 118, 125);
+ padding-left: 12px;
+ }
+
+
+ .wd-second{
+ left: 25%; position: relative;
+ color:rgb(110, 118, 125);
+ }
+ .wd-second2{
+ left: 25%; position: relative;
+ color:rgb(110, 118, 125);
+ padding-left: 12px;
+ }
+ .wd-third{
+ left: 50%; position: relative;
+ color:rgb(110, 118, 125);
+ }
+ .wd-third2{
+ left: 50%; position: relative;
+ color:rgb(110, 118, 125);
+ padding-left: 12px;
+ }
+ .wd-fourth{
+ left: 75%; position: relative;
+ color:rgb(110, 118, 125);
+ }
+
+ .wd-largeContainer{
+    display: flex;
+    padding-bottom: 16px;
+    padding-left: 16px;
+    border-bottom-style: solid;
+    border-width: 1px;
+    border-color:rgb(47, 51, 54);
+
+
+
+ }
+ .wd-rightDots{
+ float:right;
+ color:rgb(110, 118, 125);
+
+ }
+
+ .wd-avatarElement{
+     padding-top: 12px;
+     display: inline-block;
+
+ }
+ .wd-contentBlock{
+     display: inline-block;
+     padding-left: 12px;
+      max-width: 100%;
+
+ }
+
+ .wd-smallContainer{
+     display: inline-block;
+     padding-top: 12px;
+     padding-bottom: 4px;
+     position:relative;
+     width: 100%;
+ }
+.wd-rightDots{
+    position:absolute;
+    right:0px;
+    float:right;
+
+}
+ .wd-leftofdots{
+ float:left;
+ display: inline-block;
+ }
+
+ .wd-icons{
+ padding-top: 12px;
+ padding-right: 12px;
+ display: flex;
+ align-items: center;
+ max-width: 75%;
+ }
+

@@ -30,6 +30,4 @@ const who = (todo) => {
 }
 
 
-
-
 export default who;
