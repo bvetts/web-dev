@@ -51,13 +51,13 @@ return(
 
 
                     <div className ="wd-icons">
-                        <a href="#" className= "wd-first"> <i className="fa fa-comment"></i></a>
+                        <a href="/" className= "wd-first"> <i className="fa fa-comment"></i></a>
                         <div className = "wd-first2"> {post.bubble}</div>
-                        <a href="#" className = "wd-second"> <i className="fa fa-retweet"></i></a>
+                        <a href="/" className = "wd-second"> <i className="fa fa-retweet"></i></a>
                         <div className = "wd-second2">{post.arrows}</div>
-                        <a href="#" className = "wd-third"> <i className="fa fa-heart"></i></a>
+                        <a href="/" className = "wd-third"> <i className="fa fa-heart"></i></a>
                         <div className = "wd-third2">{post.heart}</div>
-                        <a href="#" className = "wd-fourth"> <i className="fa fa-upload"></i></a>
+                        <a href="/" className = "wd-fourth"> <i className="fa fa-upload"></i></a>
 
 
                     </div>
