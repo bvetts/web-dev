@@ -42,7 +42,7 @@ const ExploreComponent = () => {
 
 
             <div className="wd-bigImageContainer  position-relative">
-                        <img src="starship.jpg" className="wd-bigImage " />
+                        <img src="/images/starship.jpg" className="wd-bigImage " />
                         <div className="wd-bottomText position-absolute ">SpaceX's Starship</div>
             </div>
 

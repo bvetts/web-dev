@@ -2,7 +2,7 @@
   {"label":"y", "handle": "@elonmusk",
     "userName": "Elon Musk", "time": "-  23h",
     "title": "Amazing show about <a style=\"text-decoration:none\" href=\" \"> @Inspiration4X <\/a> mission",
-    "image": "./facemask.jpg","avatar": "./ship.png", "bubble": "4.2k", "arrows":"3.5k",
+    "image": "/images/facemask.jpg","avatar": "/images/ship.png", "bubble": "4.2k", "arrows":"3.5k",
     "heart":"37.5k" , "caption":"Countdown: Inspiration4 Mission to Space | Netflix Official Site",
     "content":"From training to launch to landing, this all-access docuseries rides along with the Inspiration4 crew on the first all-civilian orbital space...",
     "link":"netflix.com" ,"specialClass": "wd-line2"},
@@ -10,7 +10,7 @@
   {"label":"n","handle": "@nypost",
     "userName": "New York Post", "time": "-  23h",
     "title": "Grimes seen reading Karl Marx following split with worlds richest man Elon Musk <a style=\"text-decoration:none\" href=\" \"> trib.al/nx2Gfaq <\/a>",
-    "image": "./grimes.png",  "avatar": "./nypost.jpg", "tweets": "123K",  "bubble": "4.2k", "arrows":"3.5k",
+    "image": "/images/grimes.png",  "avatar": "/images/nypost.jpg", "tweets": "123K",  "bubble": "4.2k", "arrows":"3.5k",
     "heart":"37.5k" ,"caption":"", "content":"", "specialClass": "wd-line2Hide"}
 
 ]

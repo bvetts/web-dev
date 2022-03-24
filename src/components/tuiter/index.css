@@ -134,6 +134,7 @@ width: 100%;
 .wd-text{
     color: white;
     font-size: 15px;
+    width: 100%;
 
 }
 
@@ -884,11 +885,7 @@ color: rgb(70, 127, 208);
  }
 .wd-line2Hide{
 display: none;
-     border-style: solid;
-     border-width: 1px;
-     border-color:rgb(47, 51, 54);
-     border-bottom-left-radius: 20px;
-     border-bottom-right-radius: 20px;
+
 
  }
  .wd-first{
@@ -929,11 +926,6 @@ display: none;
     display: flex;
     padding-bottom: 16px;
     padding-left: 16px;
-    border-bottom-style: solid;
-    border-width: 1px;
-    border-color:rgb(47, 51, 54);
-
-
 
  }
  .wd-rightDots{
@@ -980,3 +972,206 @@ display: none;
  max-width: 75%;
  }
 
+
+
+
+
+
+
+.wd-banner{
+width: 100%;
+height: 75%;
+}
+
+.wd-user{
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+ }
+
+.wd-userName{
+     color: white;
+     font-size: 25px;
+     padding-right: 6px;
+
+}
+
+.wd-bio{
+    color: white;
+    font-size: 15px;
+    width: 100%;
+
+}
+.wd-attachments{
+    width: 100%;
+    height: 75%;
+    border-radius:5%;
+}
+.wd-attachments2{
+    width: 100%;
+    height: 100%;
+    border-radius:5%;
+}
+
+.wd-mediaBox{
+
+ }
+.wd-mediaBoxHide{
+display: none;
+
+
+ }
+.wd-newTuit{
+
+
+}
+
+.wd-tuitBox{
+
+    padding-left:2%;
+    width: 80%;
+    color:white;
+    background-color:black;
+    border: none;
+    outline: none;
+    border-bottom-style: solid;
+    border-width: 1px;
+    border-color:rgb(47, 51, 54);
+
+
+}
+.wd-avatarElement2{
+     display: flex;
+
+ }
+.wd-avatar2{
+
+  width: 15%;
+  height: 15%;
+  border-radius: 50%;
+
+ }
+
+.wd-iconsAndButtonsBox{
+display: flex;
+
+}
+.wd-tuitButton{
+vertical-align:middle;
+width:20%;
+}
+.wd-tuitIcons{
+
+display: flex;
+}
+a:link {
+  text-decoration: none;
+}
+.wd-bannerUserBox{
+position: relative;
+left: 0;
+top: 0;
+}
+.wd-userImage{
+  width: 30%;
+  height: 60%;
+  border-radius: 50%;
+  border-width: 3px;
+  position: absolute;
+  bottom: -20%;
+  left: 5%;
+  border-style: solid;
+  border-color:black;
+}
+.wd-bannerImage{
+      position: relative;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 75%;
+}
+.wd-overlayIcons{
+      bottom: 50%;
+      left: 40%;
+      position: absolute;
+
+}
+.wd-overlayIcons2{
+      bottom: 50%;
+      left: 50%;
+      position: absolute;
+
+}
+.wd-overlayUser{
+      bottom: 5%;
+      left: 18%;
+      position: absolute;
+
+}
+
+
+.wd-editBoxes{
+    width:100%;
+    border-style: solid;
+    border-width: 1px;
+    border-color:rgb(47, 51, 54);
+    padding:6px;
+}
+.wd-tuitBox2{
+
+    padding-left:2%;
+    width: 98%;
+    color:white;
+    background-color:black;
+    border: none;
+    outline: none;
+
+}
+.wd-rightArrow{
+padding-top:12px;
+width: 15%;
+vertical-align: middle;
+}
+
+.wd-spacer{
+width:80%;
+}
+.wd.editButton{
+background-color:black;
+color:white;
+border-color:white;
+}
+.btn-light{
+background-color:black;
+border-color:white;
+border-width: 1px;
+}
+.wd-numbers{
+color:white;
+}
+.wd-rightX{
+padding-top:7px;
+padding-left:6px;
+width: 15%;
+vertical-align: middle;
+}
+.wd-saveButton{
+
+width: 10%;
+margin-left:50%;
+vertical-align: middle;
+}
+
+.wd.centerEdit{
+padding-top:2px;
+width:20%;
+vertical-align: middle;
+}
+.btn-dark{
+background-color:white;
+color:black;
+
+}
+.wd-imageShader{
+    filter: brightness(60%);
+}
