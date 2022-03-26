@@ -38,7 +38,7 @@ const TuitListItem = ({
 
 
                 <div className={tuit.attachments.videoClass}>
-                    <iframe className="wd-attachments2"  src={tuit.attachments.video} title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+                    <iframe className="wd-attachments2"  src={`https://www.youtube.com/embed/${tuit.attachments.video}`} title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
 
                 </div>
 

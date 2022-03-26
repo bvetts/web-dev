@@ -18,7 +18,7 @@ const checkActive = (match, location) => {
             <div className="list-group">
                 <NavLink to="/" className="list-group-item" href="/">
                     <i className="fab fa-twitter"></i> </NavLink>
-                <NavLink  to="/tuiter/home" exact className="list-group-item" >
+                <NavLink  to="/tuiter/" exact className="list-group-item" >
                         <i className="fa fa-home"> <span className="wd-navLabels" > Home</span> </i> </NavLink>
                 <NavLink to="/tuiter/explore" className="list-group-item" >
                         <i className="fa fa-hashtag"> <span className="wd-navLabels" > Explore</span> </i> </NavLink>
