@@ -1,5 +1,8 @@
 //this page needs a ton of work
 import Verified from "./verified-tuit.js";
+import React, {useEffect} from "react";
+import {updateTuit,} from "../actions/tuits-actions";
+import {useDispatch, useSelector} from "react-redux";
 
 
 const TuitListItem = ({
@@ -9,6 +12,7 @@ const TuitListItem = ({
 
                                      }}
 ) => {
+    const dispatch = useDispatch();
     return(
     <>
 
@@ -19,7 +23,7 @@ const TuitListItem = ({
             <div className = "wd-contentBlock">
 
                 <div className="wd-smallContainer ">
-                        <div className = "wd-author d-inline">{tuit.postedBy.username}</div>
+                        <div className = "wd-author d-inline">{tuit.username}</div>
                         <Verified ver={tuit.verified}/>
                         <div className="wd-handle2 d-inline"> @{tuit.handle}</div>
                         <div className="wd-date d-inline">{tuit.time}</div>
@@ -37,13 +41,13 @@ const TuitListItem = ({
 
 
 
-                <div className={tuit.attachments.videoClass}>
-                    <iframe className="wd-attachments2"  src={`https://www.youtube.com/embed/${tuit.attachments.video}`} title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+                <div className={tuit.videoClass}>
+                    <iframe className="wd-attachments2"  src={`https://www.youtube.com/embed/${tuit.video}`} title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
 
                 </div>
 
-                <div className = {tuit.attachments.imageClass}>
-                    <img src={tuit.attachments.image} className="wd-attachments" />
+                <div className = {tuit.imageClass}>
+                    <img src={tuit.image} className="wd-attachments" />
                 </div>
 
 
@@ -57,10 +61,28 @@ const TuitListItem = ({
 
                 </div>
 
-
+                <div className = "fa-pull-right">
+                         <div className="d-inline mx-2" >
+                             Likes: {tuit.likes}
+                             <i onClick={() => updateTuit(dispatch, {
+                               ...tuit,
+                               likes: tuit.likes + 1
+                             })} className="far fa-thumbs-up ms-2 "></i>
+                         </div>
+                         <div className="d-inline " >
+                             Dislikes: {tuit.dislikes}
+                              <i onClick={() => updateTuit(dispatch, {
+                                ...tuit,
+                                dislikes: tuit.dislikes + 1
+                              })} className="far fa-thumbs-down ms-2"></i>
+                          </div>
+                </div>
 
             </div>
+
         </div>
+
+
 
 
 

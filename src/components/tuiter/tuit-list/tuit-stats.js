@@ -1,22 +1,27 @@
 import {useDispatch} from "react-redux";
+import {updateTuit,} from "../actions/tuits-actions";
 
 const TuitStats = ({tuit}) => {
   const dispatch = useDispatch();
-  const likeTuit = () => {
-    dispatch({type: 'like-tuit', tuit});
-  };
+  //const likeTuit = () => {
+  //  dispatch({type: 'like-tuit', tuit});
+  //};
+if (tuit.liked === false){
   return (
-<div className ="mx-auto wd-icons">
+    <div className ="mx-auto wd-icons">
         <span className="wd-first">
             <i className=" fa fa-comment"></i>
-            {tuit.stats.comments}
+            {tuit.comments}
         </span>
         <span className="wd-second">
              <i className="  fa fa-retweet"></i>
-             {tuit.stats.retuits}
+             {tuit.retuits}
         </span>
 
-        <span className="wd-third" onClick={likeTuit}>
+        <span className="wd-third" onClick={() => updateTuit(dispatch, {
+                                                  ...tuit,
+                                                  likes: tuit.likes + 1,
+                                                  liked : true})}>
         {
           tuit.liked &&
           <i className=" fas fa-heart me-1"
@@ -26,14 +31,55 @@ const TuitStats = ({tuit}) => {
           !tuit.liked &&
           <i className="far fa-heart me-1"></i>
         }
-        {tuit.stats && tuit.stats.likes}
+        {tuit && tuit.likes}
         </span>
 
 
         <i className="wd-fourth fa fa-upload"></i>
 
-</div>
+    </div>
   );
+
+}else{
+
+return (
+    <div className ="mx-auto wd-icons">
+        <span className="wd-first">
+            <i className=" fa fa-comment"></i>
+            {tuit.comments}
+        </span>
+        <span className="wd-second">
+             <i className="  fa fa-retweet"></i>
+             {tuit.retuits}
+        </span>
+
+        <span className="wd-third" onClick={() => updateTuit(dispatch, {
+                                                  ...tuit,
+                                                  likes: tuit.likes - 1,
+                                                  liked : false})}>
+        {
+          tuit.liked &&
+          <i className=" fas fa-heart me-1"
+             style={{color: 'red'}}></i>
+        }
+        {
+          !tuit.liked &&
+          <i className="far fa-heart me-1"></i>
+        }
+        {tuit && tuit.likes}
+        </span>
+
+
+        <i className="wd-fourth fa fa-upload"></i>
+
+    </div>
+  );
+
+
+
+
+}
+
 }
 export default TuitStats;
 

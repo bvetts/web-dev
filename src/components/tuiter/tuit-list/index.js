@@ -1,27 +1,29 @@
 //change image names in the json
 
 
-import React from "react";
-//import tuits from "./tuits.json";
+import React, {useEffect} from "react";
+import {createTuit, deleteTuit, findAllTuits} from "../actions/tuits-actions";
+import {useDispatch, useSelector} from "react-redux";
+
+
+
 import TuitListItem from "./tuit-list-item";
-import {useSelector} from "react-redux";
-import {useDispatch} from "react-redux";
-
-
 import TuitStats from "./tuit-stats";
 
 
 
-const TuitList = ({tuit}) => {
-
-const dispatch = useDispatch();
-const deleteTuit = (tuit) => {
-    dispatch({type: 'delete-tuit', tuit})
-  };
-
+const TuitList = () => {
 
 const tuits = useSelector(
-    state => state.tuits);
+       state => state.tuits);
+ const dispatch = useDispatch();
+
+useEffect(() =>
+   findAllTuits(dispatch),
+   []);
+
+
+
 
   return (
     <ul className="ttr-tuits list-group">
@@ -29,14 +31,18 @@ const tuits = useSelector(
       {
         tuits.map && tuits.map(tuit =>
             <li key = {tuit._id} className="list-group-item">
-                <i onClick={() => deleteTuit(tuit)} className="fa-solid fa-remove fa-2x fa-pull-right"></i>
+
+                <i onClick={() => deleteTuit(dispatch, tuit)} className="fa-solid fa-remove fa-2x fa-pull-right"></i>
 
                 <TuitListItem key={tuit._id}
                         tuit={tuit}/>
 
                 <TuitStats key={tuit._id}
                         tuit={tuit}/>
-          </li>
+
+
+
+            </li>
           )
 
       }
@@ -50,7 +56,7 @@ const tuits = useSelector(
 
 export default TuitList;
 
-
+//<i onClick={() => deleteTuit(tuit)} className="fa-solid fa-remove fa-2x fa-pull-right"></i>
 
 
 
